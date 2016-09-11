@@ -21,6 +21,7 @@ use std::hash::{Hash, Hasher, SipHasher};
 //
 //Various error messages that can occur
 //
+#[derive(Debug)]
 pub enum TracingFault {
     PTrace(i32),
     ProcFS(::std::io::Error),
