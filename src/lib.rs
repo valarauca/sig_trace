@@ -22,7 +22,7 @@ use std::hash::{Hash, Hasher, SipHasher};
 //Various error messages that can occur
 //
 pub enum TracingFault {
-    PTrace(i64),
+    PTrace(i32),
     ProcFS(::std::io::Error),
     CastError(::std::num::ParseIntError),
     CouldNotFindStack,
